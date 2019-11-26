@@ -32,7 +32,7 @@ class Query(graphene.ObjectType):
     users = graphene.List(UserType)
     me = graphene.Field(UserType)
 
-    def resolve_users(self,info):
+    def resolve_users(self, info):
         return get_user_model().objects.all()
 
     def resolve_me(self, info):
@@ -41,5 +41,7 @@ class Query(graphene.ObjectType):
             raise Exception('Not logged in!')
 
         return user
+
+
 class Mutation(graphene.ObjectType):
     create_user = CreateUser.Field()

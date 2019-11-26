@@ -6,6 +6,9 @@ __pycache__/
 local_settings.py
 
 .env
+### Virtual Environment ###
+venv/
 
 ### Editor ###
 .vscode/
+.idea/
