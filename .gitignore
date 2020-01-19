@@ -9,3 +9,7 @@ local_settings.py
 
 ### Editor ###
 .vscode/
+.idea/
+
+### Virtual Environment ###
+venv/

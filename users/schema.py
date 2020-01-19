@@ -41,6 +41,8 @@ class Query(graphene.ObjectType):
     #         raise Exception('Not logged in!')
 
     #     return user
+    pass
+
 
 class Mutation(graphene.ObjectType):
     create_user = CreateUser.Field()
